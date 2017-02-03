@@ -1,0 +1,28 @@
+.square {
+	width: 33.333%;
+	float: left;
+	height: 40px;
+	border: 1px solid black;
+	box-sizing: border-box;
+	position: relative;
+	margin-right: -1px;
+	margin-bottom: -1px;
+}
+
+.square-x:before,
+.square-o:before {
+	content: 'x';
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	font-size: 1.5rem;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.square-o:before {
+	content: 'o';
+}

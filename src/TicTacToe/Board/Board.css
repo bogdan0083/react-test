@@ -1,0 +1,11 @@
+.board {
+	max-width: 300px;
+	margin: 10px auto;
+	clear: both;
+}
+
+.board:after {
+	content: '';
+	clear: both;
+	display: table;
+}
